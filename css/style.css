@@ -298,14 +298,14 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
-.home_banner_area {
+.home_b_area {
   position: relative;
   z-index: 1;
   background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   margin-bottom: 200px; }
-  .home_banner_area .box_1620 {
+  .home_b_area .box_1620 {
     min-height: 700px;
     border-radius: 12px;
     position: relative;
@@ -313,19 +313,19 @@ button:focus {
     background: #fff;
     padding: 30px;
     box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
-  .home_banner_area .banner_inner {
+  .home_b_area .b_inner {
     position: relative;
     width: 100%;
     min-height: 700px;
     display: flex; }
-    .home_banner_area .banner_inner .banner_content {
+    .home_b_area .b_inner .b_content {
       color: #222222;
       vertical-align: middle;
       align-self: center;
       text-align: left; }
-      .home_banner_area .banner_inner .banner_content .media .d-flex {
+      .home_b_area .b_inner .b_content .media .d-flex {
         padding-right: 125px; }
-      .home_banner_area .banner_inner .banner_content .media .media-body {
+      .home_b_area .b_inner .b_content .media .media-body {
         vertical-align: middle;
         align-self: center; }
 
