@@ -194,6 +194,7 @@ body {
 #resume:hover {
 	background-color: #eee;
 	color: var(--light-black);
+	/* transform: translateY(-0.5em); */
 }
 
 .about-me hr,
@@ -224,8 +225,7 @@ body {
 	height: 415px;
 	margin: 1em 5px 1em 0;
 	background: #eee;
-	box-shadow: -10px -10px 15px rgba(93, 93, 93, 0.5),
-		10px 10px 15px rgba(0, 0, 0, 0.25);
+	box-shadow: -10px -10px 15px rgba(93, 93, 93, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
 	border-radius: 18px;
 	transition: 0.5s ease-out;
 }
