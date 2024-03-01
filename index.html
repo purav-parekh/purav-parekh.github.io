@@ -1,27 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
+	<script>
+		document.addEventListener("mousemove", (e) => {
+			const cursor = document.querySelector(".circle-cursor");
+			cursor.style.left = `${e.clientX}px`; /* Set the cursor position */
+			cursor.style.top = `${e.clientY}px`;
+		});
+	</script>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Purav Parekh | Freelance Web Developer</title>
+		<title>Purav Parekh | Software Engineer</title>
 		<meta
 			name="description"
-			content="Purav Parekh is freelance web designer & front-end developer based in Bangalore, currently working at Adcuratio Media Inc. He develops websites for fun! "
+			content="Purav Parekh is a software & a front-end engineer based in United States. He is currently pursuing a full-time opportunity as a Software Engineer. He develops products for fun!"
 		/>
 		<meta
 			name="keywords"
-			content="portfolio, resume, cv, web developer, software developer, web design, personal website,purav parekh, pes university, saggezza, credence robotics, react, html, css, javascript, animate.css, front-end, front end, freelancer,freelancing"
+			content="portfolio, resume, cv, web engineer, software engineer, personal website,purav parekh, george washington university, normalyze, washington dc, react, html, css, javascript, node, aws, amazon web services, medium, full stack, front-end, front end, full-stack"
 		/>
 		<meta name="author" content="Purav Parekh" />
-		<meta property="og:title" content="Purav Parekh | Freelance Web Developer" />
-		<meta property="og:url" content="https://purav-parekh.netlify.app/" />
+
+		<!-- Site Name, Title, and Description to be displayed -->
+		<meta property="og:site_name" content="Purav Parekh" />
+		<meta property="og:title" content="Purav Parekh | Software Engineer" />
 		<meta
 			property="og:description"
-			content="Purav Parekh is freelance web designer & front-end developer based in Bangalore, currently working at Adcuratio Media Inc. He develops websites for fun!"
+			content="Purav Parekh is a software & a front-end engineer based in United States. He is currently pursuing a full-time opportunity as a Software Engineer. He develops products for fun!"
 		/>
+
+		<!-- Image to display -->
+		<!-- Replace   «example.com/image01.jpg» with your own -->
 		<meta
 			property="og:image"
-			content="https://drive.google.com/file/d/1DIn5ehMNfdwhQ3eMQU4NTRw1oLSLXjYL/view?usp=sharing"
+			content="https://github.com/purav-parekh/purav-parekh.github.io/blob/master/img/android-chrome-192x192.png"
 		/>
+
+		<!-- No need to change anything here -->
+		<meta property="og:type" content="website" />
+		<meta property="og:image:type" content="image/jpeg" />
+
+		<!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+		<meta property="og:image:width" content="300" />
+		<meta property="og:image:height" content="300" />
+
+		<!-- Website to visit when clicked in fb or WhatsApp-->
+		<meta property="og:url" content="http://purav-parekh.com" />
+		<!--  -->
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-680Y9K4F3Y"></script>
@@ -41,341 +66,842 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
 
 		<!-- font-awesome -->
-		<link rel="stylesheet" href="fontawesome/css/all.css" />
+		<!-- <link rel="stylesheet" href="fontawesome/css/all.css" /> -->
 
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+
 		<!-- google font -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
 			rel="stylesheet"
 		/>
 		<!-- animate.css library -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
 		<!-- custom css -->
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/styles.css" />
 	</head>
-
 	<body>
-		<header id="home">
-			<div id="head-section">
-				<nav id="navigation-bar" class="animate__animated animate__backInUp">
-					<i class="fas fa-hand-point-right"></i>
-					<div id="nav-bar-links">
-						<ul>
-							<a class="nav-item" href="#head-section">HOME</a>
-							<a class="nav-item" href="#about-start">ABOUT</a>
-							<a class="nav-item" href="#skills-start">WORK</a>
-						</ul>
-					</div>
-				</nav>
-				<section id="home-section">
-					<div>
-						<h1 id="name" class="animate__animated animate__jackInTheBox">PURAV PAREKH</h1>
-						<h2 id="desc" class="animate__animated animate__rollIn">Front-End Developer</h2>
-					</div>
-					<div class="home-desc animate__animated animate__fadeIn">
-						<span id="scroll-desc">
-							<span>You can see my</span>
-							<div class="rw-words rw-words-1">
-								<span>Work.</span>
-								<span>Projects.</span>
-								<span>Progress.</span>
-							</div>
-							<p>Scroll to find out!</p>
-						</span>
-					</div>
-				</section>
+		<div class="circle-cursor"></div>
+
+		<nav id="navigation-bar">
+			<!-- <i class="fas fa-hand-point-right"></i> -->
+			<div id="nav-bar-links">
+				<ul>
+					<a class="nav-item" href="#head-section">home</a>
+					<a class="nav-item" href="#about-section">about</a>
+					<a class="nav-item" href="#work-section">work</a>
+					<a class="nav-item" href="#projects">projects</a>
+				</ul>
 			</div>
-		</header>
+		</nav>
 
-		<hr class="head-end my-4" id="about-start" />
-
-		<section class="container text-center padding about-me" id="about-section">
-			<h1 class="display-4 about-me-title">ABOUT ME!</h1>
-			<br />
-			<div class="row padding text-center about-wrapper">
-				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
-					<img src="img/pro_pic.jpg" alt="Purav Parekh" class="pro-pic" />
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-xl-7" style="padding: 0">
-					<p id="about-me-desc" class="padding lead">
-						Hi, I’m Purav Parekh.
+		<section class="container" id="home-section">
+			<div class="home-desc">
+				<div id="my-paragraph">
+					<h6 class="h6">Hi, my name is</h6>
+					<h1 id="name" class="h1">
+						Purav.
 						<br />
-						I’m a design-oriented Front End Developer. Ever since I created my first website, I’ve always been excited
-						about developing rich web experiences that people can interact with. After graduating from PES University, I
-						spent the last few months working remotely for several exciting startups & established companies to bring
-						their ideas to life. I strive to craft immersive web applications that are user-friendly, aesthetically
-						pleasing, & search engine optimized- with a touch of mellow smoothness. I’m constantly learning new web
-						technologies & other web/app related topics, currently playing around with Javascript & React.js. <br />
-						I am currently looking for my first full-time job as a front-end developer. When not working or futzing
-						around with code, you’ll find me recording my
-						<a
-							href="https://open.spotify.com/show/6UjU89QNZ9iPA4C0ypHEsE?si=yqJ9BvTHQt2ncpHSbmu9aw"
-							target="_blank"
-							style="font-weight: 700; color: #eee"
-							>podcast series</a
-						>
-						, exploring historical places, volunteering for a good cause, playing sports or spending time with my
-						family.
-					</p>
+						I build things for the web.
+					</h1>
+					<h5 id="desc">
+						I’m a software engineer specialized in building highly performant & scalable applications that solve
+						real-world problems & provide users with an unforgettable experience. <br />
+					</h5>
+				</div>
+			</div>
+			<div orientation="left" class="diTjzw">
+				<ul class="fLVsLB">
+					<li>
+						<a href="https://github.com/purav-parekh" aria-label="GitHub" target="_blank" rel="noreferrer">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								class="bi bi-github"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+								/></svg
+						></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/purav-parekh" aria-label="Linkedin" target="_blank" rel="noreferrer">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								class="bi bi-linkedin"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://medium.com/@purav-parekh" aria-label="GitHub" target="_blank" rel="noreferrer">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								fill="white"
+								class="bi bi-medium"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"
+								/></svg
+						></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="container" id="about-section">
+			<div class="about-desc animate__animated animate__fadeIn row">
+				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+					<h3 id="about-title">About Me.</h3>
 					<br />
-					<div>
-						<a href="/Purav Parekh Resume.pdf" download="Purav Parekh Resume" target="_blank" id="resume"
-							>Download Resume</a
+					<h5 id="desc" style="width: fit-content">
+						<!-- My name is Purav Parekh. I’m a Software Engineer! <br />
+						<br /> -->
+						Hey there! I'm Purav Parekh, a design-oriented Software Engineer with a passion for creating captivating web
+						experiences.
+						<br />
+						<br />
+						Driven by a desire to create seamless & enjoyable user experiences, I am constantly exploring & delving into
+						new technologies that make this happen! <br />Currently, diving deep into the realms of Java, React.js,
+						Vue.js, & AWS to discover their limitless possibilities.
+						<!-- 
+						<br />Currently, I'm diving deep into the realms of Java, React.js, & AWS, discovering their limitless
+						possibilities. -->
+					</h5>
+					<br />
+					<a
+						href="https://drive.google.com/file/d/1GyPlc6HcVhPBIjbAMQm7sRjpvAJ6btDZ/view?usp=sharing"
+						target="_blank"
+						id="resume"
+						>Resume
+					</a>
+				</div>
+				<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 image">
+					<img src="/images/purav-parekh.jpeg" alt="purav-parekh" />
+				</div>
+			</div>
+		</section>
+
+		<section class="container work" id="work-section">
+			<h2 class="numbered-heading">Where I’ve Worked</h2>
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+					<div class="d-flex align-items-start inner">
+						<div
+							class="nav flex-column nav-pills me-3 dyvvTf"
+							id="v-pills-tab"
+							role="tablist"
+							aria-orientation="horizontal"
 						>
+						<button
+								class="nav-link active"
+								id="nist-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#v-pills-home"
+								type="button"
+								role="tab"
+								aria-controls="v-pills-home"
+								aria-selected="true"
+							>
+							National Institute of Standards & Technology (NIST)
+							</button>	
+						<button
+								class="nav-link"
+								id="normalyze-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#v-pills-home"
+								type="button"
+								role="tab"
+								aria-controls="v-pills-home"
+								aria-selected="true"
+							>
+								Normalyze Inc
+							</button>
+							<button
+								class="nav-link"
+								id="gwu-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#v-pills-profile"
+								type="button"
+								role="tab"
+								aria-controls="v-pills-profile"
+								aria-selected="false"
+							>
+								George Washington University
+							</button>
+							<button
+								class="nav-link"
+								id="adcuratio-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#v-pills-messages"
+								type="button"
+								role="tab"
+								aria-controls="v-pills-messages"
+								aria-selected="false"
+							>
+								Adcuratio Media
+							</button>
+							<button
+								class="nav-link"
+								id="freelancer-tab"
+								data-bs-toggle="pill"
+								data-bs-target="#v-pills-settings"
+								type="button"
+								role="tab"
+								aria-controls="v-pills-settings"
+								aria-selected="false"
+							>
+								Freelancer
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12">
+					<div class="tab-content ckndNo" id="v-pills-tabContent">
+						<div
+							class="tab-pane fade show active hSMFmU tab-content-transition"
+							id="nist"
+							role="tabpanel"
+							aria-labelledby="nist-tab"
+						>
+							<h3>
+								<span>Full Stack Engineer</span
+								><span class="company"
+									>&nbsp;@&nbsp;<a
+										href="https://nist.gov/"
+										class="inline-link"
+										rel="noopener noreferrer"
+										target="_blank"
+										>National Institute of Standards & Technology (NIST)</a
+									></span
+								>
+							</h3>
+							<p class="range">Oct 2023 - Present</p>
+							<div>
+								<ul>
+									<li>
+										Develop reusable UI components & pages using Typescript, React, Ant Design & Tailwind CSS ,reducing feature implementation time by 30%.
+									</li>
+									<li>
+										Integrate RxJS to manage multiple data streams, optimizing state management & data transfer among multiple components & routes.
+									</li>
+									<li>
+										Design & implement database schemas, reducing query response time by 25%, contributing to a 20% increase in application performance.
+									</li>
+									<li>
+										Develop APIs using Rust, optimizing data access & reducing API response time by 15%, resulting in a 25% improvement in data access speed.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade hSMFmU tab-content-transition"
+							id="normalyze"
+							role="tabpanel"
+							aria-labelledby="normalyze-tab"
+						>
+							<h3>
+								<span>Software Engineering Intern</span
+								><span class="company"
+									>&nbsp;@&nbsp;<a
+										href="https://normalyze.ai/"
+										class="inline-link"
+										rel="noopener noreferrer"
+										target="_blank"
+										>Normalyze Inc</a
+									></span
+								>
+							</h3>
+							<p class="range">May 2022 - August 2022</p>
+							<div>
+								<ul>
+									<li>
+										Restructured UI fragments into reusable UI components for the React-based data & cloud security
+										application.
+									</li>
+									<li>
+										Designed, developed, & tested APIs using the Fastify framework, providing high performance &
+										scalability for mission-critical applications.
+									</li>
+									<li>
+										Scrutinized the efficacy of code by writing unit tests using Mocha.js & Chai.js with 95% test
+										coverage.
+									</li>
+									<li>
+										Brainstormed with multiple teams & built an internal admin tool for backend operations using Retool
+										& JavaScript, improving the productivity of customer success & support teams by over 70%.
+									</li>
+									<li>
+										Successfully deployed the internal admin tool onto Amazon EC2 using Docker containers & integrated
+										it with Amazon RDS to enable efficient data storage & management.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-pane fade hSMFmU tab-content-transition" id="gwu" role="tabpanel" aria-labelledby="gwu-tab">
+							<h3>
+								<span>Software Engineering Assistant</span
+								><span class="company"
+									>&nbsp;@&nbsp;<a href="" class="inline-link" rel="noopener noreferrer" target="_blank">GWU</a></span
+								>
+							</h3>
+							<p class="range">Sept 2021 - May 2023</p>
+							<div>
+								<ul>
+									<li>
+										Analyzed requirements, designed, & created responsive web pages using Drupal & front-end
+										technologies like HTML5, CSS, JavaScript, jQuery.
+									</li>
+									<li>
+										Evaluated existing UI, identified areas for improvement & optimized existing code, improving website
+										performance by 13%.
+									</li>
+									<li>
+										Assisted in the selection of new technologies & automated old operational processes lowering
+										turnaround time by 20%.
+									</li>
+									<li>
+										Designed and implemented a Python script to efficiently match students in a language exchange
+										program, improving time efficiency by over 90%, enabling faster & more accurate student matches.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade hSMFmU tab-content-transition"
+							id="adcuratio"
+							role="tabpanel"
+							aria-labelledby="adcuratio-tab"
+						>
+							<h3>
+								<span>Software Engineer</span
+								><span class="company"
+									>&nbsp;@&nbsp;<a
+										href="https://www.adcuratio.com/"
+										class="inline-link"
+										rel="noopener noreferrer"
+										target="_blank"
+										>Adcuratio Media</a
+									></span
+								>
+							</h3>
+							<p class="range">Jan 2021 - August 2021</p>
+							<div>
+								<ul>
+									<li>
+										Architected & developed reusable UI components for a React-based advertising campaign management
+										platform, streamlining contract negotiations & reducing manual effort by over 50%.
+									</li>
+									<li>Spearheaded the development & implementation of various complex modules.</li>
+									<li>
+										Leveraged Django REST APIs to integrate with a React front-end & manage application state with
+										Mob-X, resulting in improved performance & user experience.
+									</li>
+									<li>
+										Collaborated with internal teams to convert end-user feedback into meaningful & improved UI
+										components.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade hSMFmU tab-content-transition"
+							id="freelancer"
+							role="tabpanel"
+							aria-labelledby="freelancer-tab"
+						>
+							<h3>
+								<span>Freelance Full Stack Engineer</span>
+							</h3>
+							<p class="range">Sept 2019 - March 2021</p>
+							<div>
+								<ul>
+									<li>Developed full-stack web applications with JavaScript & Django.</li>
+									<li>Collaborated with the Founders, Product & UX/UI teams to design & develop apps.</li>
+									<li>
+										Helped companies achieve enhanced brand visibility of 20%, customer engagement of 7%, & revenue
+										increase of 10%.
+									</li>
+									<!-- <li>Refactoring the code of a scalable web application from Angularjs to Angular</li> -->
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<br />
-		<hr class="about-end my-4" id="skills-start" />
-
-		<section class="container skills" id="skills">
-			<h1 class="text-center display-4 skills-title">MY SKILLS</h1>
-			<br />
-			<div class="row padding text-center skill-row" style="flex-wrap: nowrap">
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<i class="fab fa-html5 skill-icon" style="color: rgb(233, 68, 18)"></i>
-					<p id="skill-desc">HTML5</p>
+		<section class="container work" id="work-section">
+			<h2 class="numbered-heading">What I Worked With</h2>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 wow">
+					<div class="service-item">
+						<div class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="3em" width="3em" fill="#eee" viewBox="0 0 640 512">
+								<path
+									d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+								/>
+							</svg>
+							<i class="bi bi-code"></i>
+						</div>
+						<div class="service-text">
+							<h3>Languages/<br class="break-2" />Tools</h3>
+							<p>Java, Python, Unix, Git, GitHub, Postman, ESLint, Webpack</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<i class="fab fa-css3-alt skill-icon" style="color: rgb(39, 83, 229)"></i>
-					<p id="skill-desc">CSS3</p>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<i class="fab fa-js-square skill-icon" style="color: yellow"></i>
-					<p id="skill-desc">JavaScript</p>
-				</div>
-
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<img
-						src="/img/bootstrap.png "
-						class="skill-icon"
-						style="height: /*150px*/ 10vw; width: /*150px*/ 10vw"
-						alt="bootstrap"
-					/>
-
-					<p id="skill-desc">Bootstrap</p>
-				</div>
-			</div>
-			<div class="row padding text-center skill-row" style="flex-wrap: nowrap">
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<i class="fab fa-react skill-icon" style="font-size: /*150px*/ 10vw; color: darkcyan"></i>
-					<p id="skill-desc">React</p>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<img
-						src="img/iu-removebg-preview.png"
-						class="skill-icon"
-						style="height: /*150px*/ 10vw; width: /*150px*/ 10vw"
-						alt="python"
-					/>
-					<p id="skill-desc">Python</p>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<img
-						src="img/django.png"
-						class="skill-icon"
-						style="height: /*150px*/ 10vw; width: /*150px*/ 10vw"
-						alt="django"
-					/>
-					<p id="skill-desc">Django</p>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 s-icon-wrapper">
-					<i class="fas fa-database skill-icon" style="font-size: /*150px*/ 10vw; color: #eee"></i>
-					<p id="skill-desc">SQL</p>
+				<div class="col-sm-12 col-md-12 col-lg-6 wow">
+					<div class="service-item">
+						<div class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="3em" width="3em" fill="#eee" viewBox="0 0 640 512">
+								<path
+									d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+								/>
+							</svg>
+						</div>
+						<div class="service-text">
+							<h3>Web Technologies</h3>
+							<p>JavaScript, Typescript, REST APIs, Ant Design, Docker, AWS</p>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<hr class="my-4 skills-end" />
+			<br class="break" />
+			<div class="row">
+				<div
+					class="col-sm-12 col-md-12 col-lg-6 wow fadeInUp"
+					data-wow-delay="0.4s"
+					style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp"
+				>
+					<div class="service-item">
+						<div class="service-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="3em"
+								height="3em"
+								fill="#eee"
+								class="bi bi-code-square"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+								/>
+								<path
+									d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"
+								/>
+							</svg>
+						</div>
+						<div class="service-text">
+							<h3>Frameworks</h3>
+							<p>React, Vue, Nuxt.js, Redux, Node.js, Express.js, Mocha, Django, Drupal</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-6 wow">
+					<div class="service-item">
+						<div class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="3em" width="3em" fill="#eee" viewBox="0 0 576 512">
+								<path
+									d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+								/>
+							</svg>
+						</div>
+						<div class="service-text">
+							<h3>Databases</h3>
+							<p>SQL, MySQL, PostgreSQL, Relational Databases</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<hr class="about-end my-4" />
-
-		<section class="container text-center projects" id="projects">
-			<div class="row padding">
-				<div id="arrow-wrapper" class="col-md-12 col-lg-12 col-xl-12">
-					<h1 id="projects-title" class="display-4">SOME PROJECTS I WORKED ON</h1>
-				</div>
-			</div>
+		<section class="container" id="projects">
+			<h2
+				class="numbered-heading"
+				data-sr-id="3"
+				style="
+					visibility: visible;
+					opacity: 1;
+					transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+					transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
+						transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+				"
+			>
+				Some Things I’ve Built
+			</h2>
+			<ul class="projects-list">
+				<li
+					class="featured__StyledProject-sc-ywnbqt-1 dIcCVR"
+					data-sr-id="5"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+						transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s,
+							transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+					"
+				>
+					<div class="project-content">
+						<div>
+							<p class="project-overline">Featured Project</p>
+							<h3 class="project-title"><a href="https://pp-nuxtjs-movie-app.netlify.app/">Movie App</a></h3>
+							<div class="project-description">
+								<p>
+									Movie App: A Nuxt.js web app that shows real-time trending movies & tv shows across genres with
+									ratings.
+								</p>
+							</div>
+							<ul class="project-tech-list">
+								<li>Nuxt.js</li>
+								<li>Vue</li>
+								<li>JavaScript</li>
+								<li>REST API</li>
+							</ul>
+							<div class="project-links">
+								<a
+									href="https://github.com/purav-parekh/movieApp-nuxtjs"
+									aria-label="GitHub Link"
+									rel="noopener noreferrer"
+									target="_blank"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="white"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-github"
+									>
+										<title>GitHub</title>
+										<path
+											d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+										></path></svg
+								></a>
+								<a
+									href="https://pp-nuxtjs-movie-app.netlify.app/"
+									target="_blank"
+									aria-label="External Link"
+									class="external"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-external-link"
+									>
+										<title>External Link</title>
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line></svg
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<a href="https://pp-nuxtjs-movie-app.netlify.app/" target="_blank"
+							><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+								<div style="max-width: 700px; display: block">
+									<img
+										alt=""
+										role="presentation"
+										aria-hidden="true"
+										src="data:image/svg+xml;charset=utf-8,%3Csvg height='408' width='700' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+										style="max-width: 100%; display: block; position: static"
+									/>
+								</div>
+								<img
+									aria-hidden="true"
+									data-placeholder-image=""
+									decoding="async"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0klEQVQoz03Q22scZRjH8fkfshUq7AoN2c3OzO5mZvYw58Puzh6yazZWY7FCtQge8ABS3NIoseTQJA019QhatFCpNl5Ya7UXEWrSmCAtRhD1RkG98Nj2b/jKTtbGiw/P877w/njeRzj3+128/39/7Imc/3MPF27F+PBmjAs3Y6zcju2c/4mxcmuAldsDnP9rgA96/t4lvPNTgv+c+TkeefeXOK/cSDC9eg9LWwkWNxLMXU2wtBXn1e141C9+Fee9X+/m7B17OfvbXoTl7WFOf9u3nWL5mxSnt5Ocup7ixHqKxc1kZH4jycmtJKduDHFifYiFjSFe/24w8sb3g7z5wz7e+nEfwsyaxuy6xtyGxvSXKi+vqhz/QmVmTWHumsL0VYXZtRHmruWYXetbzzK/mY1qz8JmhqXrGU5+nUHoXvI5esmje9HjhY971e1z6F60OfqJzbFPXY5ddpjs+czecdnixc97zMhLVwymVnWEp861efJMm/sPdah3WjQ6TcJ2nXKzSthuUBsbpdoKqbZq0V3QKFNuVvBqAX49wG8EuGHAvQcqPP9RiPDwawd5aOkAjU6H0dFx/HKI41UoFE1sr4ob1DEtD8N0yRd0FCVPLqcgiXJEljKkUxIFq8Bjb+9HGJt5gtbkYepjbWqNJpbrYns++aKOblqYlo1pO6haHkkSkWUZSZYQRTHSu0unhlENjYnFRxCCI0fwn3sWI2xSbY2jWQGK4VHUTVyvjBdU8MtVXL+Clt8NvSOTQRJFVKNEY/JphOLjUxQOd3FqLRrtcawgRHcCtEIR3bAwLIeSbqAoKrmRETK9AEnaJcuI6TQjxRL2M10E6eAC8oNTlEfH2f/ABOWwhu36UaDjBXjlKpbjRX2vKqrW/27/25KEOJwim9dRHz2OMHjfMsnOPGZQj3Zn9x5GgSVKurkzoWFGQdlsDkmS+7vbnVJMDyMrJdITC/wLtbHssInFFosAAAAASUVORK5CYII="
+									alt=""
+									style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover"
+								/>
+								<picture>
+									<!-- <source
+												type="image/avif"
+												srcset="
+													/static/6b017b4607d543466d642b7add7208e4/becf4/inssurance.avif  175w,
+													/static/6b017b4607d543466d642b7add7208e4/e54d8/inssurance.avif  350w,
+													/static/6b017b4607d543466d642b7add7208e4/44b88/inssurance.avif  700w,
+													/static/6b017b4607d543466d642b7add7208e4/4833e/inssurance.avif 1400w
+												"
+												sizes="(min-width: 700px) 700px, 100vw" /> -->
+									<!-- <source
+												type="image/webp"
+												srcset="
+													/static/6b017b4607d543466d642b7add7208e4/d905c/inssurance.webp  175w,
+													/static/6b017b4607d543466d642b7add7208e4/37212/inssurance.webp  350w,
+													/static/6b017b4607d543466d642b7add7208e4/07c6e/inssurance.webp  700w,
+													/static/6b017b4607d543466d642b7add7208e4/45a77/inssurance.webp 1400w
+												"
+												sizes="(min-width: 700px) 700px, 100vw" /> -->
+									<img
+										width="700"
+										height="408"
+										data-main-image=""
+										sizes="(min-width: 700px) 700px, 100vw"
+										decoding="async"
+										src="/images/movie-app.png"
+										srcset="
+											/images/movie-app.png  175w,
+											/images/movie-app.png  350w,
+											/images/movie-app.png  700w,
+											/images/movie-app.png 1400w
+										"
+										alt="Smart Recycler"
+										style="object-fit: cover; opacity: 1" /></picture
+								><noscript></noscript></div
+						></a>
+					</div>
+				</li>
+				<li
+					class="dIcCVR"
+					data-sr-id="4"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+						transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+							transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+					"
+				>
+					<div class="project-content">
+						<div>
+							<p class="project-overline">Featured Project</p>
+							<h3 class="project-title"><a href="https://tutorials.weshareresearch.com/">Code2Learn</a></h3>
+							<div class="project-description">
+								<p>
+									A user-friendly web application in Django that provides non-technical users with access to
+									community-curated project-based tutorials for learning programming languages & tools.
+								</p>
+							</div>
+							<ul class="project-tech-list">
+								<li>JavaScript</li>
+								<li>Python</li>
+								<li>Django</li>
+								<li>Microservices</li>
+							</ul>
+							<div class="project-links">
+								<a href="https://tutorials.weshareresearch.com/" aria-label="External Link" class="external"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-external-link"
+									>
+										<title>External Link</title>
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line></svg
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<a href="https://tutorials.weshareresearch.com/"
+							><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+								<div style="max-width: 700px; display: block">
+									<img
+										alt=""
+										role="presentation"
+										aria-hidden="true"
+										src="data:image/svg+xml;charset=utf-8,%3Csvg height='408' width='700' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+										style="max-width: 100%; display: block; position: static"
+									/>
+								</div>
+								<img
+									aria-hidden="true"
+									data-placeholder-image=""
+									decoding="async"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAbUAAAG1AHhwwEOAAACZklEQVQoz12O7U7TYBiGexLiNlm7te82pB8WWLshA4mJJ8BkhZiQaCSkJv70p4dhiME4lUhk7bq1W7u1+2DOrR0DSlkgJBJJMEElbkY9AhMQErhz5f5xJ1eeBxLam0J76xIbdmZ7R9y0JduRbCfrdCTbSW1sXbD6HxvSzUbRbOhmUzebRbNhrFuCYbzJymK5vCRI71Vt8YO4nFOL65ZmmVrL1CxTPQdq14x2zbCqulUttqq6taZ/KqkVVa6XVCOfqWhKUclUCkqzZjTX9Maa3qwZZr1k1stmvQwd6PKBLncUwZFTu2rakVM7OWFXkxxF2CtIO3mxk093tPR2TnDyoq2kOpq0X5L3S8p+SYFOcumumukVsj0t29Wy3cJZny5FuVuUTzv784JC5qSQOc6Lx3kR+r6y+nzh4ePp+zzH8VyC5xJPZrkFjuNnZp4+mOW56fn41Hx8iucSC9NxfibxKD71bG6umxZ+Z9PQUTI9yrAETePULS/iw3FqcGgYp2kQCHq9Xk+/x33Dc83l6nO7+1zu626Pq79/GCd7K/LfVB76sqTfG5+8PRYLhxkMxQZJihhhqTBDkCRAURhGrgQD2PgIc7Jc+bXyEdp7ad6N3WEjEZoeQlGUJnCaJIKhAT8IwjACXw4Cwz7gj4XZo+TGt2Ubai3uTo5NsBEmGhnFMEANBIgQCKA+zI8A1Idc1hEEcXlcYYrdS37+/O4Qqi4ejo9OMEyYZaMAgBDAbgZBEEPPnrx6GUHcHtcIFWm9/rH5tgtVXnyNRSfp4SGCpAAA5EAgQuF4CADUj6H+K/65HG2+6q0n//wD0tpQBK/qWp8AAAAASUVORK5CYII="
+									alt=""
+									style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover"
+								/><picture>
+									<img
+										width="700"
+										height="408"
+										data-main-image=""
+										sizes="(min-width: 700px) 700px, 100vw"
+										decoding="async"
+										src="/images/Code2Learn.png"
+										srcset="
+											/images/Code2Learn.png  175w,
+											/images/Code2Learn.png  350w,
+											/images/Code2Learn.png  700w,
+											/images/Code2Learn.png 1400w
+										"
+										alt="Code2Learn"
+										style="object-fit: cover; opacity: 1" /></picture
+								><noscript></noscript></div
+						></a>
+					</div>
+				</li>
+				<li
+					class="featured__StyledProject-sc-ywnbqt-1 dIcCVR"
+					data-sr-id="6"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+						transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
+							transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+					"
+				>
+					<div class="project-content">
+						<div>
+							<p class="project-overline">Featured Project</p>
+							<h3 class="project-title"><a href="#">Medovation Inc</a></h3>
+							<div class="project-description">
+								<p>
+									Full stack Django application displaying company’s products & services, that could be searched,
+									ordered, filtered & sorted based on user preferences.
+								</p>
+							</div>
+							<ul class="project-tech-list">
+								<li>JavaScript</li>
+								<li>Python</li>
+								<li>Django</li>
+								<li>SQL</li>
+							</ul>
+							<div class="project-links">
+								<a href="http://medovationinc.com/" target="_blank" aria-label="External Link" class="external"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="feather feather-external-link"
+									>
+										<title>External Link</title>
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line></svg
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project-image">
+						<a href="https://www.medovationinc.com/"
+							><div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained img">
+								<div style="max-width: 700px; display: block">
+									<img
+										alt=""
+										role="presentation"
+										aria-hidden="true"
+										src="data:image/svg+xml;charset=utf-8,%3Csvg height='408' width='700' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+										style="max-width: 100%; display: block; position: static"
+									/>
+								</div>
+								<img
+									aria-hidden="true"
+									data-placeholder-image=""
+									decoding="async"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACPklEQVQoz32QS08TURiGz0wV/oFgjCD+XRITTdy4MC7caEyMC0nEBS4AF3ilGJWL7UxLC2Xamelcz20e02lBiMaTvDnfe873PucihIarqqaCv2X/4ev+SzkhK65IgSgs7tefOL+OcT9/x/12hNM9w2n1cA46OPs+7u4+YlxOYZfzIrU4qcVNDe5kTjRurGh0RzT8gEZ7QKMT4A4S3NOkrhu9qN5zRwVuMsvNOMIJFBOJQCOGGtFLEe0Q0c+m9UT9HNFN/tS9DHGSI7xZ33CadYYK4XgZ11pjbrdG3PViVvyYZS9mqR1xx4svtNyerp/7yf7SrF7xYm55Ma6fIcRuwI0djy/tLr7fwwsignFCmqVEeUlUlPWcqpJESsJ86kdpSpgm+IMzTk/6NMc515sBQmx2uLm+x/P3Ca+3Cl5tlXQCQzOsMNqipUZJxWFrzHBYQlXVfhRrvL7BaAOlZD8qmN8+Roi1AxZefuRwEJFlklIazjLD25MKZSxZXlCUJZ/2Rvi9BKUkSZLQCxTNlkYZjcoLmoOY+TdHCPGsycLTbbwgBKOpqFDKgJZIpdHGkhcSqCilYpzmpFmBtRZjNHGSo4uSH8OMuRd7CPF4h4VHG/jDqH6OsRVSmTqsjaGaPFGpC/j5mKxLZbFVVfvDMGfuyQeEeLDJ4v11/GAKtLPGopQobbC2Ii9KSqkxM+AEVh+kbX2BGjjKmHu4hRCrGyyuruGfhVitJ0yyXBLGKWGUkBUSrW39t/p/wGHG/L13/AZQ3CLmm+gf1wAAAABJRU5ErkJggg=="
+									alt=""
+									style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover"
+								/><picture>
+									<!-- <source
+										type="image/avif"
+										srcset="
+											/static/f6114d88ccc941144aa56ea8f1839158/becf4/marofiscal.avif  175w,
+											/static/f6114d88ccc941144aa56ea8f1839158/e54d8/marofiscal.avif  350w,
+											/static/f6114d88ccc941144aa56ea8f1839158/44b88/marofiscal.avif  700w,
+											/static/f6114d88ccc941144aa56ea8f1839158/4833e/marofiscal.avif 1400w
+										"
+										sizes="(min-width: 700px) 700px, 100vw" />
+									<source
+										type="image/webp"
+										srcset="
+											/static/f6114d88ccc941144aa56ea8f1839158/d905c/marofiscal.webp  175w,
+											/static/f6114d88ccc941144aa56ea8f1839158/37212/marofiscal.webp  350w,
+											/static/f6114d88ccc941144aa56ea8f1839158/07c6e/marofiscal.webp  700w,
+											/static/f6114d88ccc941144aa56ea8f1839158/45a77/marofiscal.webp 1400w
+										"
+										sizes="(min-width: 700px) 700px, 100vw" /> -->
+									<img
+										width="700"
+										height="408"
+										data-main-image=""
+										sizes="(min-width: 700px) 700px, 100vw"
+										decoding="async"
+										src="/images/medinc.png"
+										srcset="
+											/images/medinc.png  175w,
+											/images/medinc.png  350w,
+											/images/medinc.png  700w,
+											/images/medinc.png 1400w
+										"
+										alt="Accounty Agency System"
+										style="object-fit: cover; opacity: 1" /></picture
+								><noscript></noscript></div
+						></a>
+					</div>
+				</li>
+			</ul>
 			<br />
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card">
-							<div class="image">
-								<img src="/img/KYF Logo.jpeg" alt="kutchi yuva forum" />
-							</div>
-							<div class="content">
-								<a href="http://kutchiyuvaforum.herokuapp.com" target="__blank">
-									<h3 class="project-title">Kutchi Yuva Forum</h3></a
-								>
-								<p class="project-desc">Django Website</p>
-								<p style="font-size: 0.7em">Designed & Developed a Django website for a NGO co-founded by me.</p>
-								<div class="project-links">
-									<a
-										type="button"
-										href="http://kutchiyuvaforum.herokuapp.com"
-										class="btn-floating btn-web web-link"
-										target="__blank"
-										><i class="fas fa-globe"></i
-									></a>
-									<a
-										type="button"
-										href="https://github.com/purav-parekh/Kutchi-Yuva-Forum"
-										class="btn-floating btn-git git-link"
-										target="__blank"
-									>
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card">
-							<div class="image">
-								<img src="/img/mcm.png" alt="mint chalk media" />
-							</div>
-							<div class="content">
-								<a href="https://mintchalkmedia.com" target="__blank">
-									<h3 class="project-title">Mint Chalk Media</h3></a
-								>
-								<p class="project-desc">Django Web Application</p>
-								<p style="font-size: 0.7em">
-									Designed & developed a responsive website for a Bangalore based Digital Marketing start-up.
-								</p>
-								<div class="project-links">
-									<a
-										type="button"
-										href="https://mintchalkmedia.com"
-										class="btn-floating btn-web web-link"
-										target="__blank"
-										><i class="fas fa-globe"></i
-									></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card">
-							<div class="image">
-								<img src="/img/mi_logo2.png" alt="shashwat wellness center" />
-							</div>
-							<div class="content">
-								<a href="#" target="__blank"> <h3 class="project-title">Medovation Inc</h3></a>
-								<p class="project-desc">Django Web Application</p>
-								<p style="font-size: 0.7em">
-									Designed & developed a responsive website for a product company in the pharmaceutical sector.
-								</p>
-								<div class="project-links">
-									<a
-										type="button"
-										href="http://medovationinc.com"
-										class="btn-floating btn-web web-link"
-										target="__blank"
-										><i class="fas fa-globe"></i
-									></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="projects-btn text-center">
+				<a class="contact-det" href="https://github.com/purav-parekh"
+					><button class="contact-btn text-center">
+						MORE PROJECTS
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="25"
+							height="25"
+							fill="currentColor"
+							class="bi bi-box-arrow-up-right"
+							viewBox="0 0 25 25"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+							/>
+							<path
+								fill-rule="evenodd"
+								d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+							/>
+						</svg></button
+				></a>
 			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card">
-							<div class="image">
-								<img src="/img/react.png" alt="react.js" srcset="" />
-							</div>
-							<div class="content">
-								<a href="http://https://github.com/purav-parekh/React-ToDo-App" target="_blank">
-									<h3 class="project-title">ToDo App</h3></a
-								>
-								<p class="project-desc">React JS</p>
-								<p style="font-size: 0.7em">Built a ToDo-App to understand the various concepts of React.js</p>
-								<div class="project-links">
-									<a
-										type="button"
-										class="btn-floating btn-git git-link"
-										href="https://github.com/purav-parekh/React-ToDo-App"
-										target="__blank"
-									>
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card text-center">
-							<div class="image">
-								<img src="/img/stocks.png" alt="stocks" srcset="" />
-							</div>
-							<div class="content">
-								<a href="https://github.com/purav-parekh/Stocks" target="_blank">
-									<h3 class="project-title">Analysis of Stocks</h3></a
-								>
-								<p class="project-desc">Data Science</p>
-								<p style="font-size: 0.7em">
-									Analyzed the banking sector stocks listed in the BSE30 & found out the effects of different banking
-									reforms, bank mergers, demonetization on the stock prices of the listed banks in the last 10
-									years(2008-2018) using Python.
-								</p>
-								<div class="project-links">
-									<a
-										type="button"
-										class="btn-floating btn-git git-link"
-										href="https://github.com/purav-parekh/Stocks"
-										target="__blank"
-									>
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3.5 col-xl-3.5">
-						<div class="card">
-							<div class="image">
-								<img src="/img/ninemensmorris.png" alt="nine mens morris" srcset="" />
-							</div>
-							<div class="content">
-								<a href="https://github.com/purav-parekh/Nine-Mens-Morris" target="__blank">
-									<h3 class="project-title">Nine Mens Morris</h3></a
-								>
-								<p class="project-desc">Artificial Intelligence</p>
-								<p style="font-size: 0.7em">
-									Replicated a Human vs AI game called Nine Men's Morris using Python using various heurstic functions.
-								</p>
-								<div class="project-links">
-									<a type="button" class="btn-floating btn-git git-link">
-										<i class="fab fa-github"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br />
-			<h3>
-				For more of my projects <br />
-				<br />
-
-				<button class="projects-btn" onClick="parent.open('https://www.github.com/purav-parekh/')">CLICK HERE</button>
-			</h3>
 		</section>
-
-		<hr class="about-end my-4" />
 
 		<section class="container text-center contact-form">
-			<h2 class="text-center" style="margin: 1em auto">WANT TO HIRE ME?</h2>
+			<h2 class="text-center" style="margin: 1em auto">LET'S COLLABORATE!</h2>
 			<br />
 			<br />
 			<a class="contact-det" href="mailto:purav98@gmail.com"
@@ -383,161 +909,66 @@
 			>
 			<p class="lead" style="margin: 1.5em auto">I'll get back to you shortly!</p>
 			<p>
+				<!-- GitHub-->
+				<a href="https://github.com/purav-parekh" type="button" class="btn-floating btn-git ci" target="__blank">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="white"
+						class="bi bi-github"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+						/></svg
+				></a>
 				<a
-					href="https://www.linkedin.com/in/purav-parekh-86121b98/"
+					href="https://www.linkedin.com/in/purav-parekh/"
 					type="button"
 					class="btn-floating btn-li ci"
 					target="__blank"
 				>
-					<i class="fab fa-linkedin"></i>
-				</a>
-				<a href="https://twitter.com/the_purav" type="button" class="btn-floating btn-tw ci" target="__blank">
-					<i class="fab fa-twitter"></i
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="white"
+						class="bi bi-linkedin"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+						/></svg
 				></a>
-				<!-- GitHub-->
-				<a href="https://github.com/purav-parekh" type="button" class="btn-floating btn-git ci" target="__blank">
-					<i class="fab fa-github"></i> </a
-				><br />
+				<a href="https://medium.com/@purav-parekh" type="button" class="btn-floating btn-tw ci" target="__blank">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="white"
+						class="bi bi-medium"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"
+						/></svg
+				></a>
+				<br />
 			</p>
-
-			<!-- <div class="bg-modal">
-				<div class="modal-contents"></div>
-			</div> -->
-
-			<!-- <div class="form-modal">
-				<div class="modal-content">
-					<div class="content-wrapper">
-						<div class="close">+</div>
-						<h3 class="form-tit text-center">CONTACT ME</h3>
-						<form action="contactform.php" method="POST">
-							<input type="text" name="name" placeholder="Name*" required />
-							<input type="email" name="mail" placeholder="Email*" required />
-							<textarea
-								class="message"
-								name="subject"
-								placeholder="Message*"
-								required
-							></textarea>
-							<button class="submit btn" type="submit" name="submit">
-								SUBMIT
-							</button>
-						</form>
-					</div>
-				</div>
-			</div> -->
 		</section>
 
-		<!--  -->
-
-		<!-- Footer -->
-		<footer class="page-footer font-small mdb-color lighten-3 pt-4">
-			<hr class="my-4" style="width: 100%; border-top: 1px solid #eee" />
-			<!-- Footer Links -->
-			<div class="container text-center text-md-left">
-				<!-- Grid row -->
-				<div class="row">
-					<!-- Grid column -->
-					<div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-						<!-- Content -->
-						<h5 class="font-weight-bold text-uppercase mb-4">Purav Parekh</h5>
-					</div>
-					<!-- Grid column -->
-
-					<hr class="clearfix w-100 d-md-none" />
-
-					<!-- Grid column -->
-					<div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-						<!-- Links -->
-						<h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
-
-						<ul class="list-unstyled">
-							<li>
-								<p>
-									<a class="foot-links" href="#about-start">ABOUT ME</a>
-								</p>
-							</li>
-							<li>
-								<p>
-									<a class="foot-links" href="#skills-start">SKILLS</a>
-								</p>
-							</li>
-							<li>
-								<p>
-									<a class="foot-links" href="#projects">WORK</a>
-								</p>
-							</li>
-						</ul>
-					</div>
-					<!-- Grid column -->
-
-					<hr class="clearfix w-100 d-md-none" />
-
-					<!-- Grid column  CONTACT DETAILS-->
-					<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-						<!-- Contact details -->
-						<h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
-
-						<ul class="list-unstyled">
-							<li>
-								<p class="foot-det" style="padding: 0"><i class="fas fa-home mr-3"></i> Bangalore, India</p>
-							</li>
-							<li>
-								<p>
-									<a class="foot-det" href="mailto:purav98@gmail.com"
-										><i class="fas fa-envelope mr-3"></i> purav@gmail.com</a
-									>
-								</p>
-							</li>
-							<li>
-								<p>
-									<a class="foot-det" href="tel:+919480178794"><i class="fas fa-phone mr-3"></i> + 91 94801 78794</a>
-								</p>
-							</li>
-						</ul>
-					</div>
-					<!-- Grid column -->
-
-					<hr class="clearfix w-100 d-md-none" />
-
-					<!-- Grid column SOCIAL ICONS -->
-					<div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-						<!-- Social buttons -->
-						<h5 class="font-weight-bold text-uppercase mb-4">Follow Me</h5>
-
-						<!-- LinkedIn -->
-						<a
-							href="https://www.linkedin.com/in/purav-parekh-86121b98/"
-							type="button"
-							class="btn-floating btn-li"
-							target="__blank"
-						>
-							<i class="fab fa-linkedin social-foot"></i>
-						</a>
-						<br />
-						<!-- Twitter -->
-						<a href="https://twitter.com/the_purav" type="button" class="btn-floating btn-tw" target="__blank">
-							<i class="fab fa-twitter social-foot"></i></a
-						><br />
-						<!-- GitHub-->
-						<a href="https://github.com/purav-parekh" type="button" class="btn-floating btn-git" target="__blank">
-							<i class="fab fa-github social-foot"></i> </a
-						><br />
-					</div>
-					<!-- Grid column -->
-				</div>
-				<!-- Grid row -->
-			</div>
-			<!-- Footer Links -->
-
-			<!-- Copyright -->
+		<footer>
 			<div class="footer-copyright text-center py-3">
-				© 2020 Copyright:
-				<a href="https://purav-parekh.github.io" style="color: #eee"> Purav Parekh</a>
+				© <span id="currentYear"></span> Copyright:
+				<a href="https://purav-parekh.com" style="color: #eee">Purav Parekh</a>
 			</div>
-			<!-- Copyright -->
 		</footer>
-		<!-- Footer -->
-
-		<!-- <script src="/form.js"></script> -->
+		<script src="/script.js"></script>
+		<script>
+			const currentYear = new Date().getFullYear();
+			document.getElementById("currentYear").textContent = currentYear;
+		</script>
+		<!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
 	</body>
 </html>
